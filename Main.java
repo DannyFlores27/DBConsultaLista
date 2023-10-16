@@ -7,13 +7,13 @@ import java.util.List;
 
 class Main {
   public static void main(String[] args) {
-    // Configurando conexión a base de datos
+    // Configurar conexión a base de datos
     String url = "jdbc:mysql://localhost:3306/ListaPrueba";
     String usuario = "Alex";
     String contraseña = "123321.0";
 
     try {
-        // Estableciendo conexión
+        // Establecer conexión
         Connection conexion = DriverManager.getConnection(url, usuario, contraseña);
 
         String consultaSQL = "SELECT * FROM ListaPrueba";
